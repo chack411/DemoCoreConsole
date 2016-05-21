@@ -29,6 +29,7 @@ namespace DemoCoreConsole
                 .Build();
 
             host.Run();
+
         }
     }
 }
