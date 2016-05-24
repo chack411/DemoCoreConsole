@@ -22,10 +22,11 @@ namespace DemoCoreConsole
         {
             app.Run(async (context) =>
             {
-                for (int i = 0; i < 4; i++)
+                for (int i = 1; i < 4; i++)
                 {
                     await context.Response.WriteAsync(Util.GetDataPre(i));
                 }
+                await context.Response.WriteAsync(Util.GetDataPre(0));
             });
         }
     }
